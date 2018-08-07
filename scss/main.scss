@@ -1,5 +1,8 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/background.jpg);
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 1.5s ease-out;
@@ -65,6 +68,13 @@ main {
         color: $secondary-color;
         @include easeOut();
       }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
     }
   }
 }
